@@ -1,0 +1,14 @@
+/* color */
+$light: #ffffff !default;
+$decoration: #ff9e48 !default;
+$shadow: #351a03 !default;
+$gray: #1e1e1e !default;
+$dark: #000000 !default;
+
+$colors: (
+  light: $light,
+  decoration: $decoration,
+  shadow: $shadow,
+  gray: $gray,
+  dark: $dark,
+);
