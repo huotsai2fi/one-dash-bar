@@ -55,6 +55,9 @@
     background-color: transparent;
     padding: 0;
     transition: none;
+    li {
+      padding-bottom: 0;
+    }
   }
 }
 
