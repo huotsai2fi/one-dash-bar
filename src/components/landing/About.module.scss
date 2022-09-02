@@ -1,0 +1,33 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.about {
+  padding-block: 80px;
+  @include tablet {
+    padding-block: 160px;
+  }
+}
+.about__content {
+  transition: padding-block 0.8s;
+  padding-block: 24px;
+  color: $light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  max-width: 250px;
+  p:nth-child(2) {
+    max-width: 210px;
+  }
+
+  @include tablet {
+    padding-block: 60px;
+    max-width: 580px;
+    font-size: 20px;
+    p:nth-child(2) {
+      max-width: 440px;
+    }
+  }
+}
