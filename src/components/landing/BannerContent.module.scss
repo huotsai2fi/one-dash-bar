@@ -1,0 +1,44 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 50vh;
+  h1 {
+    font-size: 3rem;
+    color: $light;
+    letter-spacing: 0.04em;
+  }
+  @include tablet {
+    width: 47%;
+    height: 100%;
+    margin-left: -12px;
+    padding-right: 10vw;
+    background: linear-gradient(
+      90.43deg,
+      #000000 22.78%,
+      rgba(0, 0, 0, 0) 92.26%
+    );
+    h1 {
+      font-size: 5rem;
+      width: 3em;
+      line-height: 1.2em;
+      text-align: center;
+    }
+  }
+}
+
+.banner__link {
+  color: $light;
+  border: 1px solid $light;
+  padding: 8px 40px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $light;
+    color: $dark;
+  }
+}

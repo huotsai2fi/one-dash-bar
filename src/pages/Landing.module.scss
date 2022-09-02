@@ -1,6 +1,13 @@
 @import '../style/variables';
+@import '../style/mixin';
 
-.bg-dark {
-  color: white;
-  background-color: $dark;
+.banner {
+  height: 50vh;
+  background-image: url('../../public/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  @include tablet {
+    height: 100vh;
+  }
 }

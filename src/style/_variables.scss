@@ -12,3 +12,8 @@ $colors: (
   gray: $gray,
   dark: $dark,
 );
+
+$breakpoints: (
+  lg: 992px,
+  md: 768px,
+);

@@ -1,0 +1,67 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.header {
+  transition: all 0.8s;
+  color: $light;
+  font-size: 18px;
+  padding: 22px 24px;
+  background-color: transparent;
+
+  &.active {
+    background-color: $dark;
+  }
+
+  @include tablet {
+    transition: padding-block 0.8s;
+    background-color: transparent !important;
+    padding-block: 42px;
+  }
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  max-height: 0%;
+  transition: all 0.8s;
+  overflow: hidden;
+  padding-inline: 24px;
+
+  li {
+    padding-bottom: 1.5rem;
+    a {
+      transition: all 0.3s;
+      &:hover {
+        color: $decoration;
+      }
+    }
+  }
+
+  &.active {
+    max-height: 300%;
+    background-color: $dark;
+  }
+
+  @include tablet {
+    position: unset;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: transparent;
+    padding: 0;
+    transition: none;
+  }
+}
+
+.header__collapse {
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+.ff-girassol {
+  @include font-family('Girassol');
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.bgc-dark {
+  background-color: $dark;
+}

@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  @include font-family('Noto Sans');
+  letter-spacing: 0.04em;
 }
 
 img {
@@ -19,4 +19,20 @@ a {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+button,
+input[type='submit'] {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  padding: 0;
+  * {
+    display: block !important;
+  }
 }
