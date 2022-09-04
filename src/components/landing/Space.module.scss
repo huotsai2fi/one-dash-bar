@@ -1,0 +1,18 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.space {
+  padding-block: 48px;
+  @include tablet {
+    padding-block: 160px;
+  }
+}
+
+.space__content {
+  transition: padding-top 0.8s;
+  padding-top: 24px;
+  color: $light;
+  @include tablet {
+    padding-top: 60px;
+  }
+}

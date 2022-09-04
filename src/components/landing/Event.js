@@ -10,6 +10,7 @@ import Col from 'react-bootstrap/Col';
 import Event1Img from '../../images/Event1.png';
 import Event2Img from '../../images/Event2.png';
 import Event3Img from '../../images/Event3.png';
+import Event4Img from '../../images/Event4.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -40,10 +41,10 @@ const events = [
   },
   {
     id: 4,
-    title: 'Jazz Night',
-    schedule: 'Jul.27 20:20-22:00',
-    description: '爵士樂live表演',
-    img: Event1Img,
+    title: 'Hustle Party',
+    schedule: 'Aug.5 20:20-23:00',
+    description: '來體驗雙人份的快樂吧',
+    img: Event4Img,
   },
 ];
 
@@ -69,7 +70,7 @@ const Event = (props) => {
           <>
             <Row className="gy-4">
               {renderEvents.map((eventDetail) => (
-                <Col md>
+                <Col key={eventDetail.id} md>
                   <EventItem {...eventDetail} />
                 </Col>
               ))}
@@ -101,7 +102,7 @@ const Event = (props) => {
             modules={[Navigation]}
           >
             {events.map((eventDetail) => (
-              <SwiperSlide>
+              <SwiperSlide key={eventDetail.id}>
                 <EventItem {...eventDetail} />
               </SwiperSlide>
             ))}

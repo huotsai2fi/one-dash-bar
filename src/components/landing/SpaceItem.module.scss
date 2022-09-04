@@ -1,0 +1,35 @@
+.image {
+  min-height: 218px;
+  background-size: cover;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+
+  &__mask {
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 43.75%,
+      #000000 94.79%
+    );
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover > &__mask {
+    height: 0%;
+    top: 100%;
+  }
+
+  & > *:not(&__mask) {
+    z-index: 2;
+  }
+}

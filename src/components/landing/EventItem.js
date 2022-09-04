@@ -4,7 +4,12 @@ import styled from 'styled-components';
 import classes from './EventItem.module.scss';
 
 const Image = styled.div`
-  background-image: url(${(props) => props.img});
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 59.37%,
+      #351a03 98.44%
+    ),
+    url(${(props) => props.img});
 `;
 
 const EventItem = (props) => {
