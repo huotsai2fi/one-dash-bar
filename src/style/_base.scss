@@ -19,6 +19,9 @@ a {
   text-decoration: none;
   color: inherit;
   display: block;
+  &:focus-visible {
+    outline: 0;
+  }
 }
 
 button,
@@ -30,9 +33,13 @@ input[type='submit'] {
   font-style: inherit;
   font-weight: inherit;
   line-height: inherit;
+  letter-spacing: 0.04em;
   color: inherit;
   padding: 0;
-  * {
-    display: block !important;
+  &:focus-visible {
+    outline: 0;
   }
+  // * {
+  //   display: block !important;
+  // }
 }

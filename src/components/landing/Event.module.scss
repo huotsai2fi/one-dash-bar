@@ -1,0 +1,60 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.event {
+  padding-bottom: 80px;
+  @include tablet {
+    padding-bottom: 160px;
+  }
+}
+
+.event__content {
+  transition: padding-top 0.8s;
+  padding-top: 24px;
+  color: $light;
+  @include tablet {
+    padding-top: 60px;
+  }
+}
+
+.more__btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 24px;
+  opacity: 0.5;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+  &--icon {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 14px;
+    transform: rotate(180deg);
+    margin-left: 0.5rem;
+  }
+}
+
+.swipper__btn {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  &--prev {
+    transform: rotate(-90deg);
+  }
+
+  &--next {
+    transform: rotate(90deg);
+  }
+
+  &--disabled {
+    opacity: 0.5;
+  }
+
+  &--prev,
+  &--next {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 28px;
+  }
+}

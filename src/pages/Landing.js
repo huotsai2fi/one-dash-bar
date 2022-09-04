@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/landing/Header';
 import BannerContent from '../components/landing/BannerContent';
 import About from '../components/landing/About';
+import Event from '../components/landing/Event';
 import { useIsMobileSize } from '../hooks/useIsMobileSize';
 
 import classes from './Landing.module.scss';
@@ -16,9 +17,10 @@ const Landing = () => {
       <Container fluid className={classes.banner}>
         {!isMobileSize && <BannerContent />}
       </Container>
-      <Container fluid className="bgc-dark">
+      <Container fluid className={`bgc-dark ${classes.section}`}>
         {isMobileSize && <BannerContent />}
         <About />
+        <Event isMobileSize={isMobileSize} />
       </Container>
     </>
   );

@@ -3,11 +3,18 @@
 
 .banner {
   height: 50vh;
-  background-image: url('../../public/banner.png');
+  background-image: url(../images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   @include tablet {
     height: 100vh;
+  }
+}
+
+.section {
+  padding-bottom: 80px;
+  @include tablet {
+    padding-block: 160px;
   }
 }

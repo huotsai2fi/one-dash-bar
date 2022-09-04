@@ -2,14 +2,14 @@
 @import '../../style/mixin';
 
 .about {
-  padding-block: 80px;
+  padding-bottom: 80px;
   @include tablet {
-    padding-block: 160px;
+    padding-bottom: 160px;
   }
 }
 .about__content {
-  transition: padding-block 0.8s;
-  padding-block: 24px;
+  transition: padding-top 0.8s;
+  padding-top: 24px;
   color: $light;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
   }
 
   @include tablet {
-    padding-block: 60px;
+    padding-top: 60px;
     max-width: 580px;
     font-size: 20px;
     p:nth-child(2) {

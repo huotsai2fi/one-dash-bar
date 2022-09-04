@@ -44,7 +44,7 @@ const Header = (props) => {
         <li>
           <Link to="#event">
             <span className="fw-medium pe-1">活動</span>
-            <span className="ff-girassol">Events</span>
+            <span className="ff-girassol">Event</span>
           </Link>
         </li>
         <li>
