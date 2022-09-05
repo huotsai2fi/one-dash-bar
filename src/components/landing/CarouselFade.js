@@ -21,8 +21,8 @@ function CarouselFade(props) {
             alt={item.titleZh}
           />
           <Carousel.Caption>
-            <span className="fz-24 fw-medium me-2">{item.titleZh}</span>
-            <span className="fz-20 ff-girassol">{item.titleEn}</span>
+            <span className="fs-5 fw-medium me-2">{item.titleZh}</span>
+            <span className="ff-girassol">{item.titleEn}</span>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

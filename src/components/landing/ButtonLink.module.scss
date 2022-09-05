@@ -1,0 +1,12 @@
+@import '../../style/variables';
+
+.link {
+  color: $light;
+  border: 1px solid $light;
+  padding: 8px 40px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $light;
+    color: $dark;
+  }
+}

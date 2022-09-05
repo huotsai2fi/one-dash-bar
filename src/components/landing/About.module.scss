@@ -3,10 +3,8 @@
 
 .about {
   padding-top: 24px;
-  padding-bottom: 80px;
   @include tablet {
     padding-top: 160px;
-    padding-bottom: 160px;
   }
 }
 .about__content {

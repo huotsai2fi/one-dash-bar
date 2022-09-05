@@ -1,0 +1,38 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.open-time {
+  padding-block: 80px;
+  @include tablet {
+    padding-block: 160px;
+  }
+}
+
+.open-time__content {
+  padding-top: 24px;
+
+  color: $light;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+
+  @include tablet {
+    padding-top: 3rem;
+    gap: 5rem;
+  }
+}
+
+.font-bigger {
+  font-size: 20px;
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.font-normal {
+  font-size: 16px;
+  @include tablet {
+    font-size: 20px;
+  }
+}

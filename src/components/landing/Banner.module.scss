@@ -1,9 +1,9 @@
-@import '../style/variables';
-@import '../style/mixin';
+@import '../../style/variables';
+@import '../../style/mixin';
 
 .banner {
   height: 50vh;
-  background-image: url(../images/banner.png);
+  background-image: url(../../images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;

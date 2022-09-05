@@ -2,9 +2,9 @@
 @import '../../style/mixin';
 
 .event {
-  padding-bottom: 80px;
+  padding-block: 80px;
   @include tablet {
-    padding-bottom: 160px;
+    padding-block: 160px;
   }
 }
 
@@ -38,7 +38,7 @@
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5rem;
 
   &--prev {
     transform: rotate(-90deg);

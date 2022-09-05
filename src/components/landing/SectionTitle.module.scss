@@ -25,4 +25,15 @@
   flex-direction: column;
   align-items: center;
   line-height: 1.2;
+  &--zh {
+    font-size: 18px;
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+  &--en {
+    @include tablet {
+      font-size: 20px;
+    }
+  }
 }

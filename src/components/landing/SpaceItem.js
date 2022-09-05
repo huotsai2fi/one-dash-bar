@@ -18,7 +18,7 @@ const SpaceItem = (props) => {
     >
       <Image img={props.img} className={classes.image}>
         <div className={classes.image__mask}></div>
-        <span className="fw-medium fz-20 me-2">{props.titleZh}</span>
+        <span className="fw-medium fs-5 me-2">{props.titleZh}</span>
         <span className="ff-girassol fz-18">{props.titleEn}</span>
       </Image>
     </Ratio>

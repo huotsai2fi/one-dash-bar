@@ -18,7 +18,7 @@ const EventItem = (props) => {
       <Image img={props.img} className={classes.image}></Image>
       <h2 className="ff-girassol mb-3">{props.title}</h2>
       <span className="ff-girassol">{props.schedule}</span>
-      <span className="fw-medium fz-20">{props.description}</span>
+      <span className="fw-medium fs-5">{props.description}</span>
     </div>
   );
 };

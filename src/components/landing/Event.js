@@ -3,9 +3,7 @@ import SectionTitle from './SectionTitle';
 import EventItem from './EventItem';
 
 import classes from './Event.module.scss';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Event1Img from '../../images/Event1.png';
 import Event2Img from '../../images/Event2.png';
@@ -63,7 +61,7 @@ const Event = (props) => {
   }
 
   return (
-    <section className={classes.event}>
+    <section id="event" className={classes.event}>
       <SectionTitle zh={'活動'} en={'Event'} />
       <Container className={classes.event__content}>
         {props.isMobileSize && (

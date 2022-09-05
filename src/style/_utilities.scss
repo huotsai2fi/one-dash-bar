@@ -6,8 +6,8 @@
   @include font-family('Great Vibes');
 }
 
-.fw-regular {
-  font-weight: 400;
+.ff-plus-jakarta-sans {
+  @include font-family('Plus Jakarta Sans');
 }
 
 .fw-medium {
@@ -24,12 +24,4 @@
 
 .fz-18 {
   font-size: 18px;
-}
-
-.fz-20 {
-  font-size: 20px;
-}
-
-.fz-24 {
-  font-size: 24px;
 }

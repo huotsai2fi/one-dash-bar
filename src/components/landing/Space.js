@@ -4,9 +4,7 @@ import SpaceItem from './SpaceItem';
 import CarouselModal from './CarouselModal';
 
 import classes from './Space.module.scss';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Space1Img from '../../images/Space1.png';
 import Space2Img from '../../images/Space2.png';
@@ -60,7 +58,7 @@ const Space = () => {
           items={spaces}
         />
       )}
-      <section className={classes.space}>
+      <section id="space" className={classes.space}>
         <SectionTitle zh={'空間'} en={'Space'} />
         <Container className={classes.space__content}>
           <Row className="gy-4">

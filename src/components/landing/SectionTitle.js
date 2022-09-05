@@ -6,8 +6,12 @@ const SectionTitle = (props) => {
   return (
     <div className={classes['section-title']}>
       <div className={classes['section-title__text']}>
-        <span className="fw-medium fz-18">{props.zh}</span>
-        <span className="ff-girassol">{props.en}</span>
+        <span className={`fw-medium ${classes['section-title__text--zh']}`}>
+          {props.zh}
+        </span>
+        <span className={`ff-girassol ${classes['section-title__text--en']}`}>
+          {props.en}
+        </span>
       </div>
     </div>
   );

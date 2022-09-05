@@ -1,0 +1,48 @@
+@import '../../style/variables';
+@import '../../style/mixin';
+
+.footer {
+  padding-block: 48px;
+  background-image: url(../../images/Footer-sm.png);
+  background-size: cover;
+  @include tablet {
+    padding-block: 100px;
+    background-image: url(../../images/Footer.png);
+  }
+}
+
+.footer__content {
+  color: $light;
+  text-align: center;
+  .title {
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+    @include tablet {
+      font-size: 40px;
+      margin-bottom: 3rem;
+    }
+  }
+  .info {
+    margin-bottom: 1.5rem;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  .icon {
+    transition: all 0.3s;
+    fill: $light;
+    height: 32px;
+    @include tablet {
+      height: 40px;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .links {
+    margin-block: 40px;
+    @include tablet {
+      margin-block: 80px;
+    }
+  }
+}
