@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/one-dash-bar/static/css/main.079afed2.css",
-    "main.js": "/one-dash-bar/static/js/main.0a395407.js",
+    "main.css": "/one-dash-bar/static/css/main.da95a940.css",
+    "main.js": "/one-dash-bar/static/js/main.5d6d5bbe.js",
     "static/media/banner.png": "/one-dash-bar/static/media/banner.95d4d3647c96b73a10af.png",
     "static/media/Footer.png": "/one-dash-bar/static/media/Footer.d2204dd18550d377b5ce.png",
     "static/media/Space1.png": "/one-dash-bar/static/media/Space1.75fc44589e1c73baab3e.png",
@@ -16,11 +16,11 @@
     "static/media/instagram.svg": "/one-dash-bar/static/media/instagram.6d5171d58481634549447b4387ccfe0c.svg",
     "index.html": "/one-dash-bar/index.html",
     "static/media/facebook-f.svg": "/one-dash-bar/static/media/facebook-f.f9b1edff2baffd70adbfa53037856b56.svg",
-    "main.079afed2.css.map": "/one-dash-bar/static/css/main.079afed2.css.map",
-    "main.0a395407.js.map": "/one-dash-bar/static/js/main.0a395407.js.map"
+    "main.da95a940.css.map": "/one-dash-bar/static/css/main.da95a940.css.map",
+    "main.5d6d5bbe.js.map": "/one-dash-bar/static/js/main.5d6d5bbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.079afed2.css",
-    "static/js/main.0a395407.js"
+    "static/css/main.da95a940.css",
+    "static/js/main.5d6d5bbe.js"
   ]
 }
