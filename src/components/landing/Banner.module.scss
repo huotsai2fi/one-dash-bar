@@ -6,8 +6,10 @@
   background-image: url(../../images/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: right 100%;
+
   @include tablet {
     height: 100vh;
+    background-position: bottom;
   }
 }

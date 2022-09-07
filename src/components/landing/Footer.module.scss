@@ -5,6 +5,7 @@
   padding-block: 48px;
   background-image: url(../../images/Footer-sm.png);
   background-size: cover;
+  background-attachment: fixed;
   @include tablet {
     padding-block: 100px;
     background-image: url(../../images/Footer.png);
